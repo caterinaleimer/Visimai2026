@@ -5,7 +5,6 @@ import visinoniPhoto from "./assets/michele-visinoni.jpeg";
 import speaker1 from "./assets/speaker1.jpeg";
 import speaker2 from "./assets/speaker-2.jpg";
 import speaker3 from "./assets/speaker-3.jpg";
-import historyImage from "./assets/history.jpg";
 import venueMap from "./assets/venue-map.jpg";
 
 const speakers = [
@@ -116,6 +115,13 @@ function App() {
               className="transition-colors hover:text-primary"
             >
               Speakers
+            </a>
+
+            <a
+              href="#committee"
+              className="transition-colors hover:text-primary"
+            >
+              Committee
             </a>
 
             <a
@@ -288,15 +294,15 @@ function App() {
             </div>
 
             <div className="p-8 lg:p-12 flex flex-col justify-center">
-              <span className="font-mono text-[11px] text-[#C7654E] uppercase tracking-widest">
+              <span className="font-mono text-sm md:text-base text-[#C7654E] uppercase tracking-[0.18em]">
                 Honorary Conference Chair
               </span>
 
-              <span className="font-mono text-[11px] text-muted-foreground uppercase tracking-widest mt-2">
+              <span className="font-mono text-sm md:text-base text-muted-foreground uppercase tracking-[0.18em] mt-3">
                 Politecnico di Milano
               </span>
 
-              <h4 className="text-3xl md:text-4xl font-bold mt-5">
+              <h4 className="text-3xl md:text-4xl font-bold mt-6">
                 Michele Visinoni
               </h4>
 
@@ -353,15 +359,15 @@ function App() {
                 </div>
 
                 <div className="p-7">
-                  <span className="font-mono text-[10px] text-[#C7654E] uppercase tracking-widest">
+                  <span className="font-mono text-sm md:text-base text-[#C7654E] uppercase tracking-[0.18em]">
                     {speaker.role}
                   </span>
 
-                  <p className="font-mono text-[10px] text-muted-foreground uppercase tracking-widest mt-2">
+                  <p className="font-mono text-sm md:text-base text-muted-foreground uppercase tracking-[0.18em] mt-3">
                     {speaker.affiliation}
                   </p>
 
-                  <h4 className="text-2xl font-bold mt-4">
+                  <h4 className="text-2xl font-bold mt-6">
                     {speaker.name}
                   </h4>
 
@@ -371,7 +377,7 @@ function App() {
                     {speaker.talkTitle}
                   </p>
 
-                  <p className="font-mono text-[10px] uppercase tracking-widest text-[#557C78] mt-7">
+                  <p className="font-mono text-xs md:text-sm uppercase tracking-widest text-[#557C78] mt-7">
                     View abstract →
                   </p>
                 </div>
@@ -381,33 +387,114 @@ function App() {
         </div>
       </section>
 
-      {/* Legacy */}
-      <section className="py-24 bg-[#394A4A] text-[#F4F0E8]">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-12 gap-12 items-center">
-          <div className="col-span-12 lg:col-span-6">
-            <h2 className="font-mono text-2xl md:text-3xl uppercase tracking-widest text-[#D8B467] mb-8">
-              04 // Legacy
-            </h2>
+      {/* Organizing and Scientific Committee */}
+      <section
+        id="committee"
+        className="py-24 bg-[#394A4A] text-[#F4F0E8]"
+      >
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="font-mono text-2xl md:text-3xl uppercase tracking-widest text-[#D8B467] mb-14">
+            04 // Organizing and Scientific Committee
+          </h2>
 
-            <h3 className="text-5xl font-extrabold tracking-tighter mb-8 leading-none">
-              A Century of
-              <br />
-              Italian Trash Television
-            </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div
+              className="
+                border border-white/15
+                rounded-2xl
+                p-8 md:p-10
+                bg-white/5
+                transition-all duration-300 ease-out
+                hover:bg-white/10
+                hover:-translate-y-1
+                hover:shadow-2xl
+              "
+            >
+              <p className="font-mono text-sm md:text-base uppercase tracking-[0.2em] text-[#D8B467] mb-6">
+                Organizing Committee
+              </p>
 
-            <p className="text-lg opacity-80 leading-relaxed max-w-prose">
-              An interdisciplinary journey through the programmes,
-              personalities and unforgettable moments that defined a national
-              tradition.
-            </p>
-          </div>
+              <div className="space-y-5">
+                <div>
+                  <h3 className="text-2xl font-bold">
+                    Committee Member
+                  </h3>
 
-          <div className="col-span-12 lg:col-span-6">
-            <img
-              src={historyImage}
-              alt="Italian television archive"
-              className="w-full aspect-[4/3] opacity-90 border border-white/10 object-cover saturate-[0.7] rounded-xl"
-            />
+                  <p className="text-base opacity-70 mt-1">
+                    Department of Mathematics, Politecnico di Milano
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-bold">
+                    Committee Member
+                  </h3>
+
+                  <p className="text-base opacity-70 mt-1">
+                    Department of Mathematics, Politecnico di Milano
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-bold">
+                    Committee Member
+                  </h3>
+
+                  <p className="text-base opacity-70 mt-1">
+                    Department of Mathematics, Politecnico di Milano
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="
+                border border-white/15
+                rounded-2xl
+                p-8 md:p-10
+                bg-white/5
+                transition-all duration-300 ease-out
+                hover:bg-white/10
+                hover:-translate-y-1
+                hover:shadow-2xl
+              "
+            >
+              <p className="font-mono text-sm md:text-base uppercase tracking-[0.2em] text-[#D8B467] mb-6">
+                Scientific Committee
+              </p>
+
+              <div className="space-y-5">
+                <div>
+                  <h3 className="text-2xl font-bold">
+                    Committee Member
+                  </h3>
+
+                  <p className="text-base opacity-70 mt-1">
+                    International expert in Italian trash television
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-bold">
+                    Committee Member
+                  </h3>
+
+                  <p className="text-base opacity-70 mt-1">
+                    Specialist in reality-show dynamics
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-bold">
+                    Committee Member
+                  </h3>
+
+                  <p className="text-base opacity-70 mt-1">
+                    Researcher in televised conflict analysis
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -514,11 +601,11 @@ function App() {
                   className="w-full aspect-square object-cover rounded-xl"
                 />
 
-                <p className="font-mono text-[10px] text-[#C7654E] uppercase tracking-widest mt-6">
+                <p className="font-mono text-sm md:text-base text-[#C7654E] uppercase tracking-[0.18em] mt-6">
                   {selectedSpeaker.role}
                 </p>
 
-                <p className="font-mono text-[10px] text-muted-foreground uppercase tracking-widest mt-2">
+                <p className="font-mono text-sm md:text-base text-muted-foreground uppercase tracking-[0.18em] mt-3">
                   {selectedSpeaker.affiliation}
                 </p>
               </div>
