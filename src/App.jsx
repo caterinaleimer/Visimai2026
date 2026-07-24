@@ -335,7 +335,7 @@ function App() {
                   overflow-hidden
                   text-left
                   transition-all duration-300 ease-out
-                  hover:scale-[1.025]
+                  hover:scale-[1.02]
                   hover:-translate-y-1
                   hover:shadow-2xl
                   hover:border-[#C7654E]/50
@@ -349,35 +349,35 @@ function App() {
                     src={speaker.image}
                     alt={speaker.name}
                     className="
-                      aspect-square
+                      aspect-[5/4]
                       object-cover
                       w-full
                       transition-transform duration-500 ease-out
-                      group-hover:scale-[1.04]
+                      group-hover:scale-[1.035]
                     "
                   />
                 </div>
 
-                <div className="p-7">
-                  <span className="font-mono text-sm md:text-base text-[#C7654E] uppercase tracking-[0.18em]">
+                <div className="p-6">
+                  <span className="font-mono text-sm text-[#C7654E] uppercase tracking-[0.16em]">
                     {speaker.role}
                   </span>
 
-                  <p className="font-mono text-sm md:text-base text-muted-foreground uppercase tracking-[0.18em] mt-3">
+                  <p className="font-mono text-sm text-muted-foreground uppercase tracking-[0.16em] mt-2">
                     {speaker.affiliation}
                   </p>
 
-                  <h4 className="text-2xl font-bold mt-6">
+                  <h4 className="text-2xl font-bold mt-5">
                     {speaker.name}
                   </h4>
 
-                  <div className="w-10 h-px bg-[#C7654E] my-5" />
+                  <div className="w-10 h-px bg-[#C7654E] my-4" />
 
                   <p className="text-lg font-semibold leading-snug">
                     {speaker.talkTitle}
                   </p>
 
-                  <p className="font-mono text-xs md:text-sm uppercase tracking-widest text-[#557C78] mt-7">
+                  <p className="font-mono text-xs uppercase tracking-widest text-[#557C78] mt-6">
                     View abstract →
                   </p>
                 </div>
