@@ -320,7 +320,7 @@ function App() {
           </div>
 
           {/* Invited speakers */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-start">
             {speakers.map((speaker) => (
               <button
                 type="button"
@@ -328,7 +328,6 @@ function App() {
                 onClick={() => setSelectedSpeaker(speaker)}
                 className="
                   group
-                  min-h-full
                   bg-[#FAF8F3]
                   border border-[#C8D2CC]
                   rounded-2xl
@@ -349,7 +348,7 @@ function App() {
                     src={speaker.image}
                     alt={speaker.name}
                     className="
-                      aspect-[5/4]
+                      aspect-[3/2]
                       object-cover
                       w-full
                       transition-transform duration-500 ease-out
@@ -358,7 +357,7 @@ function App() {
                   />
                 </div>
 
-                <div className="p-6">
+                <div className="p-5">
                   <span className="font-mono text-sm text-[#C7654E] uppercase tracking-[0.16em]">
                     {speaker.role}
                   </span>
@@ -367,17 +366,17 @@ function App() {
                     {speaker.affiliation}
                   </p>
 
-                  <h4 className="text-2xl font-bold mt-5">
+                  <h4 className="text-xl font-bold mt-4">
                     {speaker.name}
                   </h4>
 
-                  <div className="w-10 h-px bg-[#C7654E] my-4" />
+                  <div className="w-10 h-px bg-[#C7654E] my-3" />
 
-                  <p className="text-lg font-semibold leading-snug">
+                  <p className="text-base font-semibold leading-snug">
                     {speaker.talkTitle}
                   </p>
 
-                  <p className="font-mono text-xs uppercase tracking-widest text-[#557C78] mt-6">
+                  <p className="font-mono text-xs uppercase tracking-widest text-[#557C78] mt-5">
                     View abstract →
                   </p>
                 </div>
