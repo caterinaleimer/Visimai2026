@@ -1,9 +1,28 @@
 import heroImage from "./assets/hero.jpg";
-import speaker1 from "./assets/speaker-1.jpg";
+import visinoniPhoto from "./assets/michele-visinoni.jpg";
+import speaker1 from "./assets/speaker1.jpg";
 import speaker2 from "./assets/speaker-2.jpg";
 import speaker3 from "./assets/speaker-3.jpg";
 import historyImage from "./assets/history.jpg";
 import venueMap from "./assets/venue-map.jpg";
+
+const speakers = [
+  {
+    image: speaker1,
+    name: "Andrea Di Primio",
+    affiliation: "Università di Pisa",
+  },
+  {
+    image: speaker2,
+    name: "Marco Bianchi",
+    affiliation: "Politecnico di Torino",
+  },
+  {
+    image: speaker3,
+    name: "Sofia Verdi",
+    affiliation: "Università di Bologna",
+  },
+];
 
 const topics = [
   "History and Evolution of Italian Trash Television",
@@ -136,11 +155,13 @@ function App() {
           <h3 className="text-4xl font-extrabold tracking-tight mb-16">Leading Voices</h3>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-border border border-border mb-px">
-            <div className="bg-background p-8 lg:p-12 flex items-center justify-center aspect-square lg:aspect-auto">
-              <div className="w-full aspect-square bg-foreground text-background flex items-center justify-center">
-                <span className="font-mono text-6xl md:text-8xl font-bold">MV</span>
-              </div>
-            </div>
+          <div className="bg-background p-8 lg:p-12 flex items-center justify-center aspect-square lg:aspect-auto">
+            <img
+              src={visinoniPhoto}
+              alt="Michele Visinoni"
+              className="w-full aspect-square object-cover rounded-xl border border-border"
+            />
+          </div>
             <div className="bg-background p-8 lg:p-12 flex flex-col justify-center">
               <span className="font-mono text-[10px] text-primary uppercase">Principal Speaker</span>
               <span className="font-mono text-[10px] text-muted-foreground uppercase mt-2">Politecnico di Milano</span>
@@ -149,12 +170,19 @@ function App() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border border border-border">
-            {[speaker1, speaker2, speaker3].map((image, index) => (
-              <div key={image} className="bg-background p-8">
-                <img src={image} alt={`Invited speaker ${index + 1}`} className="aspect-square mb-6 object-cover w-full grayscale" />
-                <span className="font-mono text-[10px] text-primary uppercase">Invited contribution</span>
-                <h4 className="text-xl font-bold mt-1">Speaker to be announced</h4>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border border border-border rounded-xl overflow-hidden">
+            {speakers.map((speaker) => (
+              <div key={speaker.name} className="bg-background p-8">
+                <img
+                  src={speaker.image}
+                  alt={speaker.name}
+                  className="aspect-square mb-6 object-cover w-full rounded-lg"
+                />
+                <span className="font-mono text-[10px] text-primary uppercase">
+                  Invited contribution
+                </span>
+                <h4 className="text-xl font-bold mt-1">{speaker.name}</h4>
+                <p className="text-sm text-muted-foreground mt-2">{speaker.affiliation}</p>
               </div>
             ))}
           </div>
