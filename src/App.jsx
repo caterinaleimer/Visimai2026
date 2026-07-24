@@ -87,7 +87,7 @@ function App() {
 
       <section id="topics" className="py-24 bg-foreground text-background border-b border-background/10">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="font-mono text-2xl md:text-3xl uppercase tracking-widest text-muted-foreground mb-8">02 // Included topics</h2>
+          <h2 className="font-mono text-2xl md:text-3xl uppercase tracking-widest text-primary mb-8">02 // Included topics</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[minmax(180px,auto)]">
             {topics.map((topic, index) => (
               <div key={topic} className={`${index === 0 ? "md:col-span-2 row-span-2 p-8" : "p-6"} ${index === 4 || index === 7 ? "md:col-span-2" : ""} border border-background/10 flex flex-col justify-between hover:bg-background/5 transition-colors`}>
