@@ -36,15 +36,39 @@ function App() {
         </div>
       </nav>
 
-      <header className="relative h-[85vh] border-b border-border overflow-hidden">
-        <img src={heroImage} alt="Politecnico di Milano" className="absolute inset-0 w-full h-full object-cover grayscale opacity-40" />
-        <div className="relative z-10 max-w-7xl mx-auto px-6 h-full flex flex-col justify-end pb-24">
-          <p className="font-mono text-xs uppercase tracking-[0.3em] mb-4 text-primary">May 12–14, 2026</p>
-          <h1 className="text-6xl md:text-8xl font-extrabold tracking-tighter leading-[0.9]">VISIMAI 2026</h1>
-          <p className="max-w-3xl text-xl md:text-2xl font-bold mt-6">Visinoni Symposium on Media, Absurdity and Italian Television</p>
-          <p className="font-mono text-sm uppercase tracking-[0.3em] mt-5 text-primary">VisiNow and 4ever</p>
-        </div>
-      </header>
+<header className="relative h-[85vh] border-b border-border overflow-hidden">
+  <img
+    src={heroImage}
+    alt="Politecnico di Milano"
+    className="absolute inset-0 w-full h-full object-cover grayscale opacity-40"
+  />
+
+  <div className="relative z-10 max-w-7xl mx-auto px-6 h-full flex flex-col justify-end pb-24">
+    <div className="overflow-hidden">
+      <p className="hero-block hero-delay-1 font-mono text-[18px] md:text-[22px] uppercase tracking-[0.3em] mb-4 text-primary">
+        May 12–14, 2026
+      </p>
+    </div>
+
+    <div className="overflow-hidden">
+      <h1 className="hero-block hero-delay-2 text-6xl md:text-8xl font-extrabold tracking-tighter leading-[0.9]">
+        VISIMAI 2026
+      </h1>
+    </div>
+
+    <div className="overflow-hidden">
+      <p className="hero-block hero-delay-3 max-w-3xl text-xl md:text-2xl font-bold mt-6">
+        Visinoni Symposium on Media, Absurdity and Italian Television
+      </p>
+    </div>
+
+    <div className="overflow-hidden">
+      <p className="hero-block hero-delay-4 font-mono text-[18px] md:text-[22px] uppercase tracking-[0.3em] mt-5 text-primary">
+        VisiNow and 4ever
+      </p>
+    </div>
+  </div>
+</header>
 
       <section id="about" className="py-24 border-b border-border bg-white">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-12 gap-8">
