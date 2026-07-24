@@ -9,13 +9,9 @@ const topics = [
   "History and Evolution of Italian Trash Television",
   "Legendary Reality Shows",
   "Unforgettable Talk Shows",
-  "Iconic Characters",
   "Dramatic Confrontations and Memorable Moments",
-  "Media Controversies",
   "Cultural and Social Impact",
   "Archival Material and Video Analysis",
-  "Audience and Fandom Studies",
-  "Humour, Absurdity and the Italian Landscape",
 ];
 
 function App() {
@@ -62,11 +58,11 @@ function App() {
       </p>
     </div>
 
-    <div className="overflow-hidden">
-      <p className="hero-block hero-delay-4 font-mono text-[18px] md:text-[22px] uppercase tracking-[0.3em] mt-5 text-primary">
-        VisiNow and 4ever
-      </p>
-    </div>
+<div className="overflow-hidden mt-8">
+  <p className="hero-block hero-delay-4 inline-block bg-primary text-white px-4 py-3 font-mono text-[20px] md:text-[26px] uppercase tracking-[0.35em] leading-none">
+    VisiNow and 4ever
+  </p>
+</div>
   </div>
 </header>
 
