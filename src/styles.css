@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: Inter, Arial, sans-serif;
+  --font-mono: "Courier New", monospace;
+  --color-background: #f7f6f2;
+  --color-foreground: #24262a;
+  --color-primary: #cc4f36;
+  --color-muted-foreground: #6b6f76;
+  --color-border: #deddd8;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--color-background); color: var(--color-foreground); font-family: var(--font-display); }
+* { box-sizing: border-box; }
