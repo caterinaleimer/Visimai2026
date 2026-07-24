@@ -14,6 +14,15 @@ const topics = [
   "Archival Material and Video Analysis",
 ];
 
+const topicColors = [
+  "bg-[#303640]",
+  "bg-[#334442]",
+  "bg-[#40383B]",
+  "bg-[#3D3A32]",
+  "bg-[#2F3C45]",
+  "bg-[#3B3541]",
+];
+
 function App() {
   return (
     <div className="min-h-screen bg-background text-foreground font-display selection:bg-primary selection:text-white">
@@ -33,17 +42,19 @@ function App() {
       </nav>
 
 <header className="relative h-[85vh] border-b border-border overflow-hidden">
-  <img
-    src={heroImage}
-    alt="Politecnico di Milano"
-    className="absolute inset-0 w-full h-full object-cover grayscale opacity-40"
-  />
+<img
+  src={heroImage}
+  alt="Politecnico di Milano"
+  className="absolute inset-0 w-full h-full object-cover saturate-[0.65] contrast-[0.9] opacity-60"
+/>
+
+<div className="absolute inset-0 bg-[#F4F0E8]/35" />
 
   <div className="relative z-10 max-w-7xl mx-auto px-6 h-full flex flex-col justify-end pb-24">
     <div className="overflow-hidden">
-      <p className="hero-block hero-delay-1 font-mono text-[18px] md:text-[22px] uppercase tracking-[0.3em] mb-4 text-primary">
-        May 12–14, 2026
-      </p>
+<p className="hero-block hero-delay-1 font-mono text-[18px] md:text-[22px] uppercase tracking-[0.3em] mb-4 text-[#B55440]">
+  May 12–14, 2026
+</p>
     </div>
 
     <div className="overflow-hidden">
@@ -59,14 +70,14 @@ function App() {
     </div>
 
 <div className="overflow-hidden mt-8">
-  <p className="hero-block hero-delay-4 inline-block bg-primary text-white px-4 py-3 font-mono text-[20px] md:text-[26px] uppercase tracking-[0.35em] leading-none">
-    VisiNow and 4ever
-  </p>
+<p className="hero-block hero-delay-4 inline-block bg-[#C7654E] text-white px-4 py-3 font-mono text-[20px] md:text-[26px] uppercase tracking-[0.35em] leading-none">
+  VisiNow and 4ever
+</p>
 </div>
   </div>
 </header>
 
-      <section id="about" className="py-24 border-b border-border bg-white">
+      <section id="about"className="py-24 border-b border-[#D8CFC2] bg-[#F4F0E8]">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-12 gap-8">
           <div className="col-span-12 lg:col-span-4">
            <h2 className="font-mono text-2xl md:text-3xl uppercase tracking-widest text-muted-foreground"> 01 // About the conference </h2>
@@ -85,12 +96,36 @@ function App() {
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="font-mono text-2xl md:text-3xl uppercase tracking-widest text-primary mb-8">02 // Included topics</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[minmax(180px,auto)]">
-            {topics.map((topic, index) => (
-              <div key={topic} className={`${index === 0 ? "md:col-span-2 row-span-2 p-8" : "p-6"} ${index === 4 || index === 7 ? "md:col-span-2" : ""} border border-background/10 flex flex-col justify-between hover:bg-background/5 transition-colors`}>
-                <span className="font-mono text-[10px] text-primary uppercase tracking-widest">{String(index + 1).padStart(2, "0")}</span>
-                <h3 className={`${index === 0 ? "text-3xl md:text-4xl" : "text-xl"} font-bold leading-tight mt-4`}>{topic}</h3>
-              </div>
-            ))}
+           {topics.map((topic, index) => (
+  <div
+    key={topic}
+    className={`
+      ${index === 0 ? "md:col-span-2 row-span-2 p-8" : "p-6"}
+      ${index === 4 ? "md:col-span-2" : ""}
+      ${topicColors[index]}
+      border border-white/10
+      rounded-xl
+      flex flex-col justify-between
+      transition-all duration-300 ease-out
+      hover:scale-[1.015]
+      hover:-translate-y-1
+      hover:shadow-2xl
+      hover:border-white/20
+    `}
+  >
+    <span className="font-mono text-[11px] text-[#E18A70] uppercase tracking-widest">
+      {String(index + 1).padStart(2, "0")}
+    </span>
+
+    <h3
+      className={`${
+        index === 0 ? "text-3xl md:text-4xl" : "text-xl"
+      } font-bold leading-tight mt-4 text-[#F4F0E8]`}
+    >
+      {topic}
+    </h3>
+  </div>
+))}
           </div>
         </div>
       </section>
