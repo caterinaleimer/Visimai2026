@@ -13,3 +13,45 @@
 html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--color-background); color: var(--color-foreground); font-family: var(--font-display); }
 * { box-sizing: border-box; }
+
+.hero-block {
+  opacity: 0;
+  transform: translateY(110%);
+  animation: hero-block-in 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hero-delay-1 {
+  animation-delay: 0.15s;
+}
+
+.hero-delay-2 {
+  animation-delay: 0.3s;
+}
+
+.hero-delay-3 {
+  animation-delay: 0.45s;
+}
+
+.hero-delay-4 {
+  animation-delay: 0.6s;
+}
+
+@keyframes hero-block-in {
+  from {
+    opacity: 0;
+    transform: translateY(110%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-block {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
