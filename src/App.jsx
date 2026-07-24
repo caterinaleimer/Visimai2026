@@ -73,7 +73,7 @@ function App() {
       <section id="about" className="py-24 border-b border-border bg-white">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-12 gap-8">
           <div className="col-span-12 lg:col-span-4">
-            <h2 className="font-mono text-xs uppercase tracking-widest text-muted-foreground">01 // About the conference</h2>
+           <h2 className="font-mono text-2xl md:text-3xl uppercase tracking-widest text-muted-foreground"> 01 // About the conference </h2>
           </div>
           <div className="col-span-12 lg:col-span-8 space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
             <p><strong className="text-foreground">VISIMAI 2026 – Visinoni Symposium on Media, Absurdity and Italian Television</strong> will take place at the Department of Mathematics of Politecnico di Milano.</p>
@@ -87,7 +87,7 @@ function App() {
 
       <section id="topics" className="py-24 bg-foreground text-background border-b border-background/10">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="font-mono !text-[clamp(2rem,5vw,6rem)] uppercase tracking-tighter text-primary mb-16 leading-[0.9]">02 // Included topics</h2>
+          <h2 className="font-mono text-2xl md:text-3xl uppercase tracking-widest text-muted-foreground mb-8">02 // Included topics</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[minmax(180px,auto)]">
             {topics.map((topic, index) => (
               <div key={topic} className={`${index === 0 ? "md:col-span-2 row-span-2 p-8" : "p-6"} ${index === 4 || index === 7 ? "md:col-span-2" : ""} border border-background/10 flex flex-col justify-between hover:bg-background/5 transition-colors`}>
@@ -101,7 +101,7 @@ function App() {
 
       <section id="speakers" className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="font-mono text-xs uppercase tracking-widest text-muted-foreground mb-4">03 // Keynote speakers</h2>
+          <h2 className="font-mono text-2xl md:text-3xl uppercase tracking-widest text-muted-foreground mb-4"> 03 // Keynote speakers </h2>
           <h3 className="text-4xl font-extrabold tracking-tight mb-16">Leading Voices</h3>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-border border border-border mb-px">
@@ -133,7 +133,7 @@ function App() {
       <section className="py-24 bg-foreground text-background">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-12 gap-12 items-center">
           <div className="col-span-12 lg:col-span-6">
-            <h2 className="font-mono text-xs uppercase tracking-widest text-primary mb-8">04 // Legacy</h2>
+            <h2 className="font-mono text-2xl md:text-3xl uppercase tracking-widest text-primary mb-8"> 04 // Legacy </h2>
             <h3 className="text-5xl font-extrabold tracking-tighter mb-8 leading-none">A Century of<br />Italian Trash Television</h3>
             <p className="text-lg opacity-80 leading-relaxed max-w-prose">An interdisciplinary journey through the programmes, personalities and unforgettable moments that defined a national tradition.</p>
           </div>
@@ -146,7 +146,7 @@ function App() {
       <section id="venue" className="py-24 border-b border-border">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-12 gap-12">
           <div className="col-span-12 lg:col-span-4">
-            <h2 className="font-mono text-xs uppercase tracking-widest text-muted-foreground mb-8">05 // The venue</h2>
+            <h2 className="font-mono text-2xl md:text-3xl uppercase tracking-widest text-muted-foreground mb-8"> 05 // The venue </h2>
             <p className="font-bold uppercase text-sm">Department of Mathematics</p>
             <p className="text-muted-foreground text-sm mt-2">Politecnico di Milano<br />Piazza Leonardo da Vinci, 32<br />20133 Milano, Italy</p>
           </div>
