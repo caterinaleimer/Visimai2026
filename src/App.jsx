@@ -62,6 +62,15 @@ const speakers = [
   },
     {
     image: speaker6,
+    name: "Mattia Corti",
+    affiliation: "Politecnico di Milano",
+    role: "Invited Contribution",
+    talkTitle: "Talk title to be announced",
+    abstract:
+      "Abstract to be announced.",
+  },
+  {
+    image: speaker6,
     name: "Samuele Brunati",
     affiliation: "Politecnico di Milano",
     role: "Invited Contribution",
