@@ -47,9 +47,9 @@ const speakers = [
     name: "Giacomo Lorenzon",
     affiliation: "Politecnico di Milano",
     role: "Invited Contribution",
-    talkTitle: "Talk title to be announced",
+    talkTitle: "On the Existence and Uniqueness of the “Scelta”",
     abstract:
-      "Abstract to be announced.",
+      "We study the well-posedness of the scelta problem under emotional uncertainty. We prove existence, disprove uniqueness, and show that introducing an ex invariably destroys convergence.",
   },
     {
     image: speaker5,
