@@ -2,9 +2,19 @@ import { useEffect, useState } from "react";
 
 import heroImage from "./assets/hero.jpg";
 import visinoniPhoto from "./assets/michele-visinoni.jpeg";
+
 import speaker1 from "./assets/speaker1.jpeg";
 import speaker2 from "./assets/speaker-2.jpg";
 import speaker3 from "./assets/speaker-3.jpg";
+
+import organizing1 from "./assets/organizing-1.jpg";
+import organizing2 from "./assets/organizing-2.jpg";
+import organizing3 from "./assets/organizing-3.jpg";
+
+import scientific1 from "./assets/scientific-1.jpg";
+import scientific2 from "./assets/scientific-2.jpg";
+import scientific3 from "./assets/scientific-3.jpg";
+
 import venueMap from "./assets/venue-map.jpg";
 
 const speakers = [
@@ -34,6 +44,42 @@ const speakers = [
     talkTitle: "Grande Fratello: Observation, Control and Human Behaviour",
     abstract:
       "An interdisciplinary study of continuous observation, strategic alliances, nominations, emotional breakdowns, and collective behaviour inside a controlled televised environment.",
+  },
+];
+
+const organizingCommittee = [
+  {
+    image: organizing1,
+    name: "Committee Member",
+    description: "Department of Mathematics, Politecnico di Milano",
+  },
+  {
+    image: organizing2,
+    name: "Committee Member",
+    description: "Department of Mathematics, Politecnico di Milano",
+  },
+  {
+    image: organizing3,
+    name: "Committee Member",
+    description: "Department of Mathematics, Politecnico di Milano",
+  },
+];
+
+const scientificCommittee = [
+  {
+    image: scientific1,
+    name: "Committee Member",
+    description: "International expert in Italian trash television",
+  },
+  {
+    image: scientific2,
+    name: "Committee Member",
+    description: "Specialist in reality-show dynamics",
+  },
+  {
+    image: scientific3,
+    name: "Committee Member",
+    description: "Researcher in televised conflict analysis",
   },
 ];
 
@@ -386,7 +432,7 @@ function App() {
         </div>
       </section>
 
-      {/* Organizing and Scientific Committee */}
+      {/* Committee */}
       <section
         id="committee"
         className="py-24 bg-[#394A4A] text-[#F4F0E8]"
@@ -397,6 +443,7 @@ function App() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Organizing Committee */}
             <div
               className="
                 border border-white/15
@@ -409,43 +456,46 @@ function App() {
                 hover:shadow-2xl
               "
             >
-              <p className="font-mono text-sm md:text-base uppercase tracking-[0.2em] text-[#D8B467] mb-6">
+              <p className="font-mono text-sm md:text-base uppercase tracking-[0.2em] text-[#D8B467] mb-8">
                 Organizing Committee
               </p>
 
-              <div className="space-y-5">
-                <div>
-                  <h3 className="text-2xl font-bold">
-                    Committee Member
-                  </h3>
+              <div className="space-y-7">
+                {organizingCommittee.map((member) => (
+                  <div
+                    key={`${member.name}-${member.description}`}
+                    className="flex items-center gap-5"
+                  >
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="
+                        w-16 h-16
+                        md:w-[72px] md:h-[72px]
+                        rounded-full
+                        object-cover
+                        shrink-0
+                        border-2 border-[#D8B467]/40
+                        transition-transform duration-300
+                        hover:scale-105
+                      "
+                    />
 
-                  <p className="text-base opacity-70 mt-1">
-                    Department of Mathematics, Politecnico di Milano
-                  </p>
-                </div>
+                    <div className="min-w-0">
+                      <h3 className="text-xl md:text-2xl font-bold leading-tight">
+                        {member.name}
+                      </h3>
 
-                <div>
-                  <h3 className="text-2xl font-bold">
-                    Committee Member
-                  </h3>
-
-                  <p className="text-base opacity-70 mt-1">
-                    Department of Mathematics, Politecnico di Milano
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-2xl font-bold">
-                    Committee Member
-                  </h3>
-
-                  <p className="text-base opacity-70 mt-1">
-                    Department of Mathematics, Politecnico di Milano
-                  </p>
-                </div>
+                      <p className="text-sm md:text-base opacity-70 mt-1 leading-snug">
+                        {member.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
 
+            {/* Scientific Committee */}
             <div
               className="
                 border border-white/15
@@ -458,40 +508,42 @@ function App() {
                 hover:shadow-2xl
               "
             >
-              <p className="font-mono text-sm md:text-base uppercase tracking-[0.2em] text-[#D8B467] mb-6">
+              <p className="font-mono text-sm md:text-base uppercase tracking-[0.2em] text-[#D8B467] mb-8">
                 Scientific Committee
               </p>
 
-              <div className="space-y-5">
-                <div>
-                  <h3 className="text-2xl font-bold">
-                    Committee Member
-                  </h3>
+              <div className="space-y-7">
+                {scientificCommittee.map((member) => (
+                  <div
+                    key={`${member.name}-${member.description}`}
+                    className="flex items-center gap-5"
+                  >
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="
+                        w-16 h-16
+                        md:w-[72px] md:h-[72px]
+                        rounded-full
+                        object-cover
+                        shrink-0
+                        border-2 border-[#D8B467]/40
+                        transition-transform duration-300
+                        hover:scale-105
+                      "
+                    />
 
-                  <p className="text-base opacity-70 mt-1">
-                    International expert in Italian trash television
-                  </p>
-                </div>
+                    <div className="min-w-0">
+                      <h3 className="text-xl md:text-2xl font-bold leading-tight">
+                        {member.name}
+                      </h3>
 
-                <div>
-                  <h3 className="text-2xl font-bold">
-                    Committee Member
-                  </h3>
-
-                  <p className="text-base opacity-70 mt-1">
-                    Specialist in reality-show dynamics
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-2xl font-bold">
-                    Committee Member
-                  </h3>
-
-                  <p className="text-base opacity-70 mt-1">
-                    Researcher in televised conflict analysis
-                  </p>
-                </div>
+                      <p className="text-sm md:text-base opacity-70 mt-1 leading-snug">
+                        {member.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
