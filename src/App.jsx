@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import heroImage from "./assets/hero.jpg";
 import visinoniPhoto from "./assets/michele-visinoni.jpeg";
 import speaker1 from "./assets/speaker1.jpeg";
-import speaker2 from "./assets/speaker2.jpg";
+import speaker2 from "./assets/speaker2.jpeg";
 import speaker3 from "./assets/speaker-3.jpg";
 import venueMap from "./assets/venue-map.jpg";
 
