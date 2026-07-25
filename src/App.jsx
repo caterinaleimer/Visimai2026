@@ -2,19 +2,9 @@ import { useEffect, useState } from "react";
 
 import heroImage from "./assets/hero.jpg";
 import visinoniPhoto from "./assets/michele-visinoni.jpeg";
-
 import speaker1 from "./assets/speaker1.jpeg";
 import speaker2 from "./assets/speaker-2.jpg";
 import speaker3 from "./assets/speaker-3.jpg";
-
-import organizing1 from "./assets/organizing-1.jpg";
-import organizing2 from "./assets/organizing-2.jpg";
-import organizing3 from "./assets/organizing-3.jpg";
-
-import scientific1 from "./assets/scientific-1.jpg";
-import scientific2 from "./assets/scientific-2.jpg";
-import scientific3 from "./assets/scientific-3.jpg";
-
 import venueMap from "./assets/venue-map.jpg";
 
 const speakers = [
@@ -49,17 +39,17 @@ const speakers = [
 
 const organizingCommittee = [
   {
-    image: organizing1,
+    image: visinoniPhoto,
     name: "Committee Member",
     description: "Department of Mathematics, Politecnico di Milano",
   },
   {
-    image: organizing2,
+    image: visinoniPhoto,
     name: "Committee Member",
     description: "Department of Mathematics, Politecnico di Milano",
   },
   {
-    image: organizing3,
+    image: visinoniPhoto,
     name: "Committee Member",
     description: "Department of Mathematics, Politecnico di Milano",
   },
@@ -67,17 +57,17 @@ const organizingCommittee = [
 
 const scientificCommittee = [
   {
-    image: scientific1,
+    image: visinoniPhoto,
     name: "Committee Member",
     description: "International expert in Italian trash television",
   },
   {
-    image: scientific2,
+    image: visinoniPhoto,
     name: "Committee Member",
     description: "Specialist in reality-show dynamics",
   },
   {
-    image: scientific3,
+    image: visinoniPhoto,
     name: "Committee Member",
     description: "Researcher in televised conflict analysis",
   },
@@ -461,9 +451,9 @@ function App() {
               </p>
 
               <div className="space-y-7">
-                {organizingCommittee.map((member) => (
+                {organizingCommittee.map((member, index) => (
                   <div
-                    key={`${member.name}-${member.description}`}
+                    key={`organizing-${index}`}
                     className="flex items-center gap-5"
                   >
                     <img
@@ -513,9 +503,9 @@ function App() {
               </p>
 
               <div className="space-y-7">
-                {scientificCommittee.map((member) => (
+                {scientificCommittee.map((member, index) => (
                   <div
-                    key={`${member.name}-${member.description}`}
+                    key={`scientific-${index}`}
                     className="flex items-center gap-5"
                   >
                     <img
