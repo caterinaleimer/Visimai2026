@@ -8,6 +8,7 @@ import coauthor2 from "./assets/cospeaker2.jpeg";
 import speaker3 from "./assets/speaker3.jpeg";
 import speaker4 from "./assets/speaker-3.jpg";
 import speaker5 from "./assets/speaker-3.jpg";
+import speaker5 from "./assets/speaker-3.jpg";
 import venueMap from "./assets/venue-map.jpg";
 
 const speakers = [
@@ -16,7 +17,7 @@ const speakers = [
     name: "Andrea Di Primio",
     affiliation: "Università di Pisa",
     role: "Invited Contribution",
-    talkTitle: "Temptation Island - From the Village to the Bonfire: Stability, Bifurcations, and Collapse in Coupled Systems",
+    talkTitle: "From the Village to the Bonfire: Stability, Bifurcations, and Collapse in Coupled Systems",
     abstract:
       "In this talk, we study the evolution of a coupled system subject to nonautonomous external forcing, partial observation, and delayed information transfer. The state of the system is typically described by two heterogeneous interacting components whose dynamics is highly nonlinear. The initial datum is a couple assumed to lie near a known instability. The first objective is to determine whether this instability can be tamed through multiplicative perturbations. More precisely, we ask whether deviations induced by spatial separation, interaction with external agents, or incomplete information remain controlled, or whether they are amplified and eventually destroy the initial configuration. The so-called 'bonfire confrontation' is interpreted as a final condition for the system. The admissible final states are terminal coupling or terminal decoupling. In certain exceptional cases, the procedure may be iterated through supplementary bonfires until a suitable terminal configuration is obtained.",
   },
@@ -34,16 +35,16 @@ const speakers = [
   },
   {
     image: speaker3,
-    name: "Giacomo Lorenzon",
+    name: "Emilia Capuano & Beatrice Crippa",
     affiliation: "Politecnico di Milano",
     role: "Invited Contribution",
-    talkTitle: "Grande Fratello: Observation, Control and Human Behaviour",
+    talkTitle: "Blind Optimization in Human Matching: A Study of Compatibility Under Information Constraint in Love is Blind Italia",
     abstract:
-      "An interdisciplinary study of continuous observation, strategic alliances, nominations, emotional breakdowns, and collective behaviour inside a controlled televised environment.",
+      "Investigation of the evolution of romantic relationships initiated under intentionally incomplete information, where visual data are deliberately removed from the optimization process. We investigate the role of hidden variables, delayed observations, expectation-driven bifurcations, and the robustness of emotional equilibria following the introduction of physical appearance into the system. Numerical simulations and empirical evidence suggest that initial compatibility does not necessarily imply asymptotic stability.",
   },
   {
     image: speaker4,
-    name: "Samuele Brunati",
+    name: "Giacomo Lorenzon",
     affiliation: "Politecnico di Milano",
     role: "Invited Contribution",
     talkTitle: "Talk title to be announced",
@@ -53,6 +54,15 @@ const speakers = [
     {
     image: speaker5,
     name: "Anna Scotti",
+    affiliation: "Politecnico di Milano",
+    role: "Invited Contribution",
+    talkTitle: "Talk title to be announced",
+    abstract:
+      "Abstract to be announced.",
+  },
+    {
+    image: speaker6,
+    name: "Samuele Brunati",
     affiliation: "Politecnico di Milano",
     role: "Invited Contribution",
     talkTitle: "Talk title to be announced",
