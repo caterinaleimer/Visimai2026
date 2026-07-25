@@ -16,9 +16,9 @@ const speakers = [
     name: "Andrea Di Primio",
     affiliation: "Università di Pisa",
     role: "Invited Contribution",
-    talkTitle: "Temptation Island as a Nonlinear Dynamical System",
+    talkTitle: "Temptation Island - From the Village to the Bonfire: Stability, Bifurcations, and Collapse in Coupled Systems",
     abstract:
-      "A nonlinear analysis of emotional instability, bonfire confrontations, unexpected video messages, and irreversible relationship bifurcations. Numerical evidence suggests that no couple is asymptotically stable.",
+      "In this talk, we study the evolution of a coupled system subject to nonautonomous external forcing, partial observation, and delayed information transfer. The state of the system is typically described by two heterogeneous interacting components whose dynamics is highly nonlinear. The initial datum is a couple assumed to lie near a known instability. The first objective is to determine whether this instability can be tamed through multiplicative perturbations. More precisely, we ask whether deviations induced by spatial separation, interaction with external agents, or incomplete information remain controlled, or whether they are amplified and eventually destroy the initial configuration. The so-called "bonfire confrontation" is interpreted as a final condition for the system. The admissible final states are terminal coupling or terminal decoupling. In certain exceptional cases, the procedure may be iterated through supplementary bonfires until a suitable terminal configuration is obtained.",
   },
   {
     image: speaker2,
