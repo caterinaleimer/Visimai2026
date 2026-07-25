@@ -4,6 +4,7 @@ import heroImage from "./assets/hero.jpg";
 import visinoniPhoto from "./assets/michele-visinoni.jpeg";
 import speaker1 from "./assets/speaker1.jpeg";
 import speaker2 from "./assets/speaker2.jpeg";
+import coauthor2 from "./assets/speaker2.jpeg";
 import speaker3 from "./assets/speaker-3.jpg";
 import venueMap from "./assets/venue-map.jpg";
 
@@ -21,9 +22,11 @@ const speakers = [
     image: speaker2,
     name: "Davide Carrara",
     coauthor: "Alessandra Cancrini",
+    coauthorImage: coauthor2,
     affiliation: "Politecnico di Milano",
     role: "Invited Contribution",
-    talkTitle: "Matrimonio a Prima Vista: Compatibility, Stability and Unexpected Dynamics",
+    talkTitle:
+      "Matrimonio a Prima Vista: Compatibility, Stability and Unexpected Dynamics",
     abstract:
       "A mathematical investigation of compatibility, first impressions, rapidly evolving relationships, and the long-term stability of couples formed under highly nonstandard initial conditions.",
   },
@@ -381,19 +384,76 @@ function App() {
                   focus:ring-[#C7654E]
                 "
               >
-                <div className="overflow-hidden">
+                <div className="relative aspect-[3/2] overflow-hidden bg-[#DDE5E0]">
+                {speaker.coauthorImage ? (
+                  <div className="grid grid-cols-2 w-full h-full">
+                    <div className="relative overflow-hidden border-r-2 border-[#FAF8F3]">
+                      <img
+                        src={speaker.image}
+                        alt={speaker.name}
+                        className="
+                          w-full h-full
+                          object-cover
+                          transition-transform duration-500 ease-out
+                          group-hover:scale-[1.04]
+                        "
+                      />
+              
+                      <span
+                        className="
+                          absolute bottom-2 left-2
+                          bg-[#252933]/85
+                          text-white
+                          px-2 py-1
+                          rounded-md
+                          font-mono text-[9px]
+                          uppercase tracking-wider
+                        "
+                      >
+                        {speaker.name}
+                      </span>
+                    </div>
+              
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={speaker.coauthorImage}
+                        alt={speaker.coauthor}
+                        className="
+                          w-full h-full
+                          object-cover
+                          transition-transform duration-500 ease-out
+                          group-hover:scale-[1.04]
+                        "
+                      />
+              
+                      <span
+                        className="
+                          absolute bottom-2 right-2
+                          bg-[#252933]/85
+                          text-white
+                          px-2 py-1
+                          rounded-md
+                          font-mono text-[9px]
+                          uppercase tracking-wider
+                        "
+                      >
+                        {speaker.coauthor}
+                      </span>
+                    </div>
+                  </div>
+                ) : (
                   <img
                     src={speaker.image}
                     alt={speaker.name}
                     className="
-                      aspect-[3/2]
+                      w-full h-full
                       object-cover
-                      w-full
                       transition-transform duration-500 ease-out
                       group-hover:scale-[1.035]
                     "
                   />
-                </div>
+                )}
+              </div>
 
                 <div className="p-5">
                   <span className="font-mono text-sm text-[#C7654E] uppercase tracking-[0.16em]">
