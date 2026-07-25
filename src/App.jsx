@@ -8,7 +8,7 @@ import coauthor2 from "./assets/cospeaker2.jpeg";
 import speaker3 from "./assets/speaker3.jpeg";
 import speaker4 from "./assets/speaker-3.jpg";
 import speaker5 from "./assets/speaker-3.jpg";
-import speaker5 from "./assets/speaker-3.jpg";
+import speaker6 from "./assets/speaker-3.jpg";
 import venueMap from "./assets/venue-map.jpg";
 
 const speakers = [
