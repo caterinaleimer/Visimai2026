@@ -6,6 +6,7 @@ import speaker1 from "./assets/speaker1.jpeg";
 import speaker2 from "./assets/speaker2.jpeg";
 import coauthor2 from "./assets/cospeaker2.jpeg";
 import speaker3 from "./assets/speaker-3.jpg";
+import speaker4 from "./assets/speaker-3.jpg";
 import venueMap from "./assets/venue-map.jpg";
 
 const speakers = [
@@ -32,13 +33,23 @@ const speakers = [
   },
   {
     image: speaker3,
-    name: "Sofia Verdi",
-    affiliation: "Università di Bologna",
+    name: "Giacomo Lorenzon",
+    affiliation: "Politecnico di Milano",
     role: "Invited Contribution",
     talkTitle: "Grande Fratello: Observation, Control and Human Behaviour",
     abstract:
       "An interdisciplinary study of continuous observation, strategic alliances, nominations, emotional breakdowns, and collective behaviour inside a controlled televised environment.",
   },
+  {
+    image: speaker4,
+    name: "Samuele Brunati",
+    affiliation: "Politecnico di Milano",
+    role: "Invited Contribution",
+    talkTitle: "Talk title to be announced",
+    abstract:
+      "Abstract to be announced.",
+  },
+  
 ];
 
 const organizingCommittee = [
