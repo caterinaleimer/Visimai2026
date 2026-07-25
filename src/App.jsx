@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 
 import heroImage from "./assets/hero.jpg";
 import visinoniPhoto from "./assets/michele-visinoni.jpeg";
-import speaker1 from "./assets/speaker1.jpeg";
+import speaker1 from "./assets/speaker1.png";
 import speaker2 from "./assets/speaker2.jpeg";
 import coauthor2 from "./assets/cospeaker2.jpeg";
-import speaker3 from "./assets/speaker3.jpeg";
-import speaker4 from "./assets/speaker-3.jpg";
-import speaker5 from "./assets/speaker-3.jpg";
-import speaker6 from "./assets/speaker-3.jpg";
+import speaker3 from "./assets/speaker3.png";
+import speaker4 from "./assets/speaker4.jpg";
+import speaker5 from "./assets/speaker5.jpeg";
+import speaker6 from "./assets/speaker6.jpeg";
 import venueMap from "./assets/venue-map.jpg";
 
 const speakers = [
