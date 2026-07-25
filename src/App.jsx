@@ -7,6 +7,7 @@ import speaker2 from "./assets/speaker2.jpeg";
 import coauthor2 from "./assets/cospeaker2.jpeg";
 import speaker3 from "./assets/speaker-3.jpg";
 import speaker4 from "./assets/speaker-3.jpg";
+import speaker5 from "./assets/speaker-3.jpg";
 import venueMap from "./assets/venue-map.jpg";
 
 const speakers = [
@@ -49,41 +50,45 @@ const speakers = [
     abstract:
       "Abstract to be announced.",
   },
+    {
+    image: speaker5,
+    name: "Anna Scotti",
+    affiliation: "Politecnico di Milano",
+    role: "Invited Contribution",
+    talkTitle: "Talk title to be announced",
+    abstract:
+      "Abstract to be announced.",
+  },
   
 ];
 
 const organizingCommittee = [
   {
     image: visinoniPhoto,
-    name: "Committee Member",
-    description: "Department of Mathematics, Politecnico di Milano",
+    name: "Francesco Daniele",
+    description: "Politecnico di Milano",
   },
   {
     image: visinoniPhoto,
-    name: "Committee Member",
-    description: "Department of Mathematics, Politecnico di Milano",
-  },
-  {
-    image: visinoniPhoto,
-    name: "Committee Member",
-    description: "Department of Mathematics, Politecnico di Milano",
+    name: "Valentina Pederzoli",
+    description: "Politecnico di Milano",
   },
 ];
 
 const scientificCommittee = [
   {
     image: visinoniPhoto,
-    name: "Committee Member",
+    name: "Caterina Leimer Saglio",
     description: "International expert in Italian trash television",
   },
   {
     image: visinoniPhoto,
-    name: "Committee Member",
+    name: "Emilia Capuano",
     description: "Specialist in reality-show dynamics",
   },
   {
     image: visinoniPhoto,
-    name: "Committee Member",
+    name: "Denise Grappein",
     description: "Researcher in televised conflict analysis",
   },
 ];
