@@ -19,12 +19,13 @@ const speakers = [
   },
   {
     image: speaker2,
-    name: "Marco Bianchi",
-    affiliation: "Politecnico di Torino",
+    name: "Davide Carrara",
+    coauthor: "Alessandra Cancrini",
+    affiliation: "Politecnico di Milano",
     role: "Invited Contribution",
-    talkTitle: "Uomini e Donne: Stable Couples and Unstable Dynamics",
+    talkTitle: "Matrimonio a Prima Vista: Compatibility, Stability and Unexpected Dynamics",
     abstract:
-      "A mathematical investigation of televised courtship, studio confrontations, audience reactions, and the long-term stability of relationships formed under highly nonstandard boundary conditions.",
+      "A mathematical investigation of compatibility, first impressions, rapidly evolving relationships, and the long-term stability of couples formed under highly nonstandard initial conditions.",
   },
   {
     image: speaker3,
@@ -405,6 +406,12 @@ function App() {
                   <h4 className="text-xl font-bold mt-4">
                     {speaker.name}
                   </h4>
+
+                  {speaker.coauthor && (
+                    <p className="text-sm text-muted-foreground mt-1">
+                      with {speaker.coauthor}
+                    </p>
+                  )}
 
                   <div className="w-10 h-px bg-[#C7654E] my-3" />
 
