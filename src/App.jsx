@@ -134,12 +134,12 @@ const topicColors = [
 
 const keynoteSpeaker = {
   image: keynotePhoto,
-  name: "Keynote Speaker",
+  name: "Michele Visinoni",
   affiliation: "Politecnico di Milano",
-  role: "Keynote Speaker",
-  talkTitle: "Keynote Talk Title",
+  role: "Bono",
+  talkTitle: "Goodbye, Lagrange. It's Not You, It's the Discretization",
   abstract:
-    "Keynote abstract to be announced.",
+    "The rumours were true. After years of stealing degrees of freedom and making linear systems larger than necessary, the Lagrange multiplier has been shown the door. The replacement? A four-field Virtual Element formulation that keeps stress symmetric without any extra drama. Same mathematical elegance, far less baggage.",
 };
 
 
