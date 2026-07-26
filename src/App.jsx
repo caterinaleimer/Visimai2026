@@ -415,7 +415,7 @@ function App() {
   className="
     group
     w-full
-    grid grid-cols-1 md:grid-cols-[340px_1fr]
+    grid grid-cols-1 md:grid-cols-[380px_1fr] items-stretch
     bg-[#FAF8F3]
     border border-[#C8D2CC]
     rounded-2xl
@@ -431,18 +431,19 @@ function App() {
     focus:ring-[#C7654E]
   "
 >
-  <div className="h-[240px] md:h-[260px] overflow-hidden">
-    <img
-      src={keynoteSpeaker.image}
-      alt={keynoteSpeaker.name}
-      className="
-        w-full h-full
-        object-cover
-        transition-transform duration-500 ease-out
-        group-hover:scale-[1.04]
-      "
-    />
-  </div>
+  <div className="relative min-h-[260px] md:min-h-full overflow-hidden">
+  <img
+    src={keynoteSpeaker.image}
+    alt={keynoteSpeaker.name}
+    className="
+      absolute inset-0
+      w-full h-full
+      object-cover
+      transition-transform duration-500 ease-out
+      group-hover:scale-[1.04]
+    "
+  />
+</div>
 
   <div className="p-7 md:p-9 flex flex-col justify-center">
     <span className="font-mono text-sm md:text-base text-[#C7654E] uppercase tracking-[0.18em]">
