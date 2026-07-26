@@ -301,12 +301,27 @@ function App() {
         className="py-24 border-b border-[#D8CFC2] bg-[#F4F0E8]"
       >
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-12 gap-8">
-          <div className="col-span-12 lg:col-span-4">
-            <h2 className="font-mono text-2xl md:text-3xl uppercase tracking-widest text-muted-foreground">
-              01 // About the conference
-            </h2>
-          </div>
+          <div className="col-span-12 lg:col-span-4 flex flex-col items-start">
+  <img
+    src={conferenceLogo}
+    alt="VISIMAI 2026 logo"
+    className="
+      w-48 h-48
+      md:w-56 md:h-56
+      lg:w-64 lg:h-64
+      object-cover
+      rounded-3xl
+      bg-white
+      border border-[#D8CFC2]
+      shadow-lg
+      mb-8
+    "
+  />
 
+  <h2 className="font-mono text-2xl md:text-3xl uppercase tracking-widest text-muted-foreground leading-[1.15]">
+    01 // About the conference
+  </h2>
+</div>
           <div className="col-span-12 lg:col-span-8 space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
             <p>
               <strong className="text-foreground">
