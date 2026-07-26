@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import heroImage from "./assets/hero.jpg";
 import visinoniPhoto from "./assets/michele-visinoni.jpeg";
-
+import conferenceLogo from "./assets/visimai-logo.jpeg";
 import speaker1 from "./assets/speaker1.png";
 import speaker2 from "./assets/speaker2.jpeg";
 import coauthor2 from "./assets/cospeaker2.jpeg";
@@ -190,16 +190,36 @@ function App() {
     <div className="min-h-screen bg-background text-foreground font-display selection:bg-primary selection:text-white">
       {/* Navigation */}
       <nav className="sticky top-0 z-50 w-full bg-background/85 backdrop-blur-md border-b border-border">
-        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="flex items-baseline gap-2">
-            <span className="font-mono text-xs font-bold bg-foreground text-background px-1.5 py-0.5">
-              VISIMAI 2026
-            </span>
+        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+          <a
+  href="#top"
+  className="flex items-center gap-3 group"
+  aria-label="VISIMAI 2026 home"
+>
+  <img
+    src={conferenceLogo}
+    alt="VISIMAI 2026 logo"
+    className="
+      w-14 h-14
+      object-cover
+      rounded-full
+      bg-white
+      border border-[#C8D2CC]
+      transition-transform duration-300
+      group-hover:scale-105
+    "
+  />
 
-            <span className="text-sm font-bold tracking-tight uppercase">
-              VisiNow and 4ever
-            </span>
-          </div>
+  <div className="hidden sm:block leading-tight">
+    <p className="text-sm font-bold tracking-tight uppercase">
+      VISIMAI 2026
+    </p>
+
+    <p className="font-mono text-[9px] uppercase tracking-[0.16em] text-muted-foreground mt-1">
+      VisiNow and 4ever
+    </p>
+  </div>
+</a>
 
           <div className="hidden md:flex gap-8 text-[11px] font-mono uppercase tracking-widest">
             <a href="#about" className="transition-colors hover:text-primary">
@@ -239,7 +259,7 @@ function App() {
       </nav>
 
       {/* Hero */}
-      <header className="relative h-[85vh] border-b border-border overflow-hidden">
+      <header id="top" className="relative h-[85vh] border-b border-border overflow-hidden" >
         <img
           src={heroImage}
           alt="Politecnico di Milano"
@@ -821,11 +841,37 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-[#F4F0E8]">
-        <div className="max-w-7xl mx-auto px-6 text-[10px] font-mono text-muted-foreground uppercase tracking-widest">
-          © 2026 VISIMAI // VisiNow and 4ever
-        </div>
-      </footer>
+      <footer className="py-10 bg-[#F4F0E8]">
+  <div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-5">
+    <div className="flex items-center gap-4">
+      <img
+        src={conferenceLogo}
+        alt="VISIMAI 2026 logo"
+        className="
+          w-20 h-20
+          object-cover
+          rounded-full
+          bg-white
+          border border-[#D8CFC2]
+        "
+      />
+
+      <div>
+        <p className="text-sm font-bold uppercase tracking-tight">
+          VISIMAI 2026
+        </p>
+
+        <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mt-1">
+          VisiNow and 4ever
+        </p>
+      </div>
+    </div>
+
+    <p className="text-[10px] font-mono text-muted-foreground uppercase tracking-widest">
+      © 2026 VISIMAI
+    </p>
+  </div>
+</footer>
 
       {/* Abstract modal */}
       {selectedSpeaker && (
