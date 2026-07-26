@@ -9,6 +9,7 @@ import speaker3 from "./assets/speaker3.png";
 import speaker4 from "./assets/speaker4.jpeg";
 import speaker5 from "./assets/speaker5.jpeg";
 import speaker6 from "./assets/speaker6.jpeg";
+import speaker7 from "./assets/speaker7.jpeg";
 import venueMap from "./assets/venue-map.jpg";
 
 const speakers = [
@@ -70,7 +71,7 @@ const speakers = [
       "This is the story of a Chinese researcher—let’s call her Emiliawang Capuandong, without loss of generality. She is collaborating with a coauthor, Michele Visinoni, who is not particularly fond of her notation for virtual element spaces. Despite his repeated suggestions, she consistently refuses to accept his changes to the TeX file. Eventually, Michele grows frustrated, and from that moment on, they stop having Zoom meetings altogether. Now, she would like to apologize and make dofi-dofi stabilizations together once again.",
   },
   {
-    image: speaker6,
+    image: speaker7,
     name: "Samuele Brunati",
     affiliation: "Politecnico di Milano",
     role: "Invited Contribution",
