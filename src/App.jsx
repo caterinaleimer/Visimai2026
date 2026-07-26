@@ -11,6 +11,7 @@ import speaker5 from "./assets/speaker5.jpeg";
 import speaker6 from "./assets/speaker6.jpeg";
 import speaker7 from "./assets/speaker7.png";
 import venueMap from "./assets/venue-map.jpg";
+import keynotePhoto from "./assets/keynote-speaker.jpg";
 
 const speakers = [
   {
@@ -130,6 +131,17 @@ const topicColors = [
   "bg-[#2F3C45]",
   "bg-[#3B3541]",
 ];
+
+const keynoteSpeaker = {
+  image: keynotePhoto,
+  name: "Keynote Speaker",
+  affiliation: "Politecnico di Milano",
+  role: "Keynote Speaker",
+  talkTitle: "Keynote Talk Title",
+  abstract:
+    "Keynote abstract to be announced.",
+};
+
 
 function App() {
   const [selectedSpeaker, setSelectedSpeaker] = useState(null);
@@ -395,6 +407,67 @@ function App() {
               </p>
             </div>
           </div>
+
+          {/* Keynote Speaker */}
+<button
+  type="button"
+  onClick={() => setSelectedSpeaker(keynoteSpeaker)}
+  className="
+    group
+    w-full
+    grid grid-cols-1 md:grid-cols-[340px_1fr]
+    bg-[#FAF8F3]
+    border border-[#C8D2CC]
+    rounded-2xl
+    overflow-hidden
+    text-left
+    mb-10
+    transition-all duration-300 ease-out
+    hover:-translate-y-1
+    hover:shadow-2xl
+    hover:border-[#C7654E]/50
+    focus:outline-none
+    focus:ring-2
+    focus:ring-[#C7654E]
+  "
+>
+  <div className="h-[240px] md:h-[260px] overflow-hidden">
+    <img
+      src={keynoteSpeaker.image}
+      alt={keynoteSpeaker.name}
+      className="
+        w-full h-full
+        object-cover
+        transition-transform duration-500 ease-out
+        group-hover:scale-[1.04]
+      "
+    />
+  </div>
+
+  <div className="p-7 md:p-9 flex flex-col justify-center">
+    <span className="font-mono text-sm md:text-base text-[#C7654E] uppercase tracking-[0.18em]">
+      {keynoteSpeaker.role}
+    </span>
+
+    <p className="font-mono text-sm text-muted-foreground uppercase tracking-[0.16em] mt-2">
+      {keynoteSpeaker.affiliation}
+    </p>
+
+    <h4 className="text-2xl md:text-3xl font-bold mt-5">
+      {keynoteSpeaker.name}
+    </h4>
+
+    <div className="w-12 h-px bg-[#C7654E] my-4" />
+
+    <p className="text-lg md:text-xl font-semibold leading-snug">
+      {keynoteSpeaker.talkTitle}
+    </p>
+
+    <p className="font-mono text-xs uppercase tracking-widest text-[#557C78] mt-6">
+      View keynote abstract →
+    </p>
+  </div>
+</button>
 
           {/* Invited speakers */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-start">
