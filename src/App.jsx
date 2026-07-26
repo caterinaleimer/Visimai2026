@@ -65,18 +65,18 @@ const speakers = [
     name: "Mattia Corti",
     affiliation: "Politecnico di Milano",
     role: "Invited Contribution",
-    talkTitle: "Talk title to be announced",
+    talkTitle: "C'è posta per Visinau - On the Irreversibility of Notational Disputes",
     abstract:
-      "Abstract to be announced.",
+      "This is the story of a Chinese researcher—let’s call her Emiliawang Capuandong, without loss of generality. She is collaborating with a coauthor, Michele Visinoni, who is not particularly fond of her notation for virtual element spaces. Despite his repeated suggestions, she consistently refuses to accept his changes to the TeX file. Eventually, Michele grows frustrated, and from that moment on, they stop having Zoom meetings altogether. Now, she would like to apologize and make dofi-dofi stabilizations together once again.",
   },
   {
     image: speaker6,
     name: "Samuele Brunati",
     affiliation: "Politecnico di Milano",
     role: "Invited Contribution",
-    talkTitle: "Talk title to be announced",
+    talkTitle: "VISI-SHIT: Visinau-Informed Super-Hyperdimensional Innovative Telechronism",
     abstract:
-      "Abstract to be announced.",
+      "Traditional football commentary has historically focused on describing events occurring on the pitch. However, during the FIFA World Cup 2026, Lele Adani introduced a disruptive broadcasting paradigm demonstrating that RAI 1 could overcome the historical dominance of Canale 5 in trash-content peaks, introducing a new benchmark for high-impact television entertainment. In this work, we present the VISI-SHIT framework (Visinau-Informed Scientific Investigation of Hyperdimensional Innovative Telechronism), a computational methodology combining signal processing, natural language processing and machine learning to quantify the benefits of this emerging commentary style. The framework is developed as a tribute to Visinau, whose critical analysis of Adani's performances represents a unique opportunity to investigate the limits of conventional football perception. We introduce novel quantitative metrics including the Garra Index, Fútbol Semantic Density, Dios Invocation Frequency, and Shouting-to-Foul Ratio. Experimental results demonstrate that Adani consistently maximizes audience immersion by combining emotional amplification, Argentine mythology and historical references involving Messi, Maradona and Dios, while simultaneously achieving unprecedented levels of narrative deviation from conventional sports commentary.",
   },
   
 ];
