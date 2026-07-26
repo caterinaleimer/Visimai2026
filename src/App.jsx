@@ -22,7 +22,7 @@ const speakers = [
   {
     image: speaker1,
     name: "Andrea Di Primio",
-    affiliation: "Università di Pisa",
+    affiliation: "Scuola Normale Superiore",
     role: "Invited Contribution",
     talkTitle:
       "From the Village to the Bonfire: Stability, Bifurcations, and Collapse in Coupled Systems",
