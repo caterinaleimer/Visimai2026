@@ -785,38 +785,38 @@ function App() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8 md:gap-14">
-            {sponsors.map((sponsor) => (
-              <div
-                key={sponsor.name}
-                className="
-                  w-full sm:w-[320px]
-                  h-36 md:h-40
-                  px-8 py-6
-                  bg-white
-                  border border-[#D8CFC2]
-                  rounded-2xl
-                  flex items-center justify-center
-                  transition-all duration-300 ease-out
-                  hover:-translate-y-1
-                  hover:shadow-xl
-                  hover:border-[#C7654E]/40
-                "
-              >
-                <img
-                  src={sponsor.image}
-                  alt={`${sponsor.name} logo`}
-                  className="
-                    block
-                    max-w-full
-                    max-h-full
-                    w-auto
-                    h-auto
-                    object-contain
-                  "
-                />
-              </div>
-            ))}
-          </div>
+  {sponsors.map((sponsor) => (
+    <div
+      key={sponsor.name}
+      className="
+        w-full sm:w-[360px]
+        h-48 md:h-56
+        p-3
+        bg-white
+        border border-[#D8CFC2]
+        rounded-2xl
+        flex items-center justify-center
+        overflow-hidden
+        transition-all duration-300 ease-out
+        hover:-translate-y-1
+        hover:shadow-xl
+        hover:border-[#C7654E]/40
+      "
+    >
+      <img
+        src={sponsor.image}
+        alt={`${sponsor.name} logo`}
+        className="
+          w-full
+          h-full
+          object-contain
+          transition-transform duration-300
+          hover:scale-[1.03]
+        "
+      />
+    </div>
+  ))}
+</div>
         </div>
       </section>
 
