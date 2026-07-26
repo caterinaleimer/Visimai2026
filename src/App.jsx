@@ -56,9 +56,9 @@ const speakers = [
     name: "Anna Scotti",
     affiliation: "Politecnico di Milano",
     role: "Invited Contribution",
-    talkTitle: "Talk title to be announced",
+    talkTitle: "Error analysis in elimination methods",
     abstract:
-      "Abstract to be announced.",
+      "Elimination methods have been the technique of choice to solve complex problems for decades, mostly due to their simplicity and robustness. However, even apparently negligible errors can be amplified by nonlinear couplings leading to the identification of the agent, early verification of stopping criteria and application of constraints. This work presents a thorough investigation of such error propagation mechanisms, discussing mitigation strategies, such as the minimization of traces and residuals left on the scene. Several test cases are presented to support theoretical findings.",
   },
     {
     image: speaker6,
