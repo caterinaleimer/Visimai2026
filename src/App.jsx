@@ -30,9 +30,9 @@ const speakers = [
     affiliation: "Politecnico di Milano",
     role: "Invited Contribution",
     talkTitle:
-      "Matrimonio a Prima Vista: Compatibility, Stability and Unexpected Dynamics",
+      "Marriage Without Initial Conditions: A Numerical Investigation of Matrimonio a Prima Vista Italia",
     abstract:
-      "A mathematical investigation of compatibility, first impressions, rapidly evolving relationships, and the long-term stability of couples formed under highly nonstandard initial conditions.",
+      "The formation of stable couples under limited initial information remains an open problem in applied human dynamics. We analyze recent seasons of Matrimonio a Prima Vista Italia through the lens of dynamical systems, with particular attention to the case studies of Dario & Roberta and Andrea & Linda. Their trajectories highlight the interplay between expert-based matching, emotional nonlinearities, and unexpected external perturbations. We conclude by discussing the limitations of current matchmaking algorithms, for which no convergence guarantees are available.",
   },
   {
     image: speaker3,
