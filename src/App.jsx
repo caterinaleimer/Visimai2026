@@ -9,7 +9,7 @@ import speaker3 from "./assets/speaker3.png";
 import speaker4 from "./assets/speaker4.jpeg";
 import speaker5 from "./assets/speaker5.jpeg";
 import speaker6 from "./assets/speaker6.jpeg";
-import speaker7 from "./assets/speaker7.jpeg";
+import speaker7 from "./assets/speaker7.png";
 import venueMap from "./assets/venue-map.jpg";
 
 const speakers = [
