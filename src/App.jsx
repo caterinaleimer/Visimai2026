@@ -11,7 +11,7 @@ import speaker4 from "./assets/speaker4.jpeg";
 import speaker5 from "./assets/speaker5.jpeg";
 import speaker6 from "./assets/speaker6.jpeg";
 import speaker7 from "./assets/speaker7.png";
-import heroRightImage from "./assets/hero-right.png";
+import heroRightImage from "./assets/hero-right.jpeg";
 import venueMap from "./assets/venue-map.jpg";
 import keynotePhoto from "./assets/keynote-speaker.png";
 
