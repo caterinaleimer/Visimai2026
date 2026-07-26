@@ -11,7 +11,7 @@ import speaker4 from "./assets/speaker4.jpeg";
 import speaker5 from "./assets/speaker5.jpeg";
 import speaker6 from "./assets/speaker6.jpeg";
 import speaker7 from "./assets/speaker7.png";
-
+import heroRightImage from "./assets/hero-right.jpeg";
 import venueMap from "./assets/venue-map.jpg";
 import keynotePhoto from "./assets/keynote-speaker.png";
 
@@ -259,41 +259,69 @@ function App() {
       </nav>
 
       {/* Hero */}
-      <header id="top" className="relative h-[85vh] border-b border-border overflow-hidden" >
+      <header
+  id="top"
+  className="relative h-[85vh] border-b border-border overflow-hidden"
+>
+  <img
+    src={heroImage}
+    alt="Politecnico di Milano"
+    className="absolute inset-0 w-full h-full object-cover grayscale opacity-40"
+  />
+
+  <div className="absolute inset-0 bg-[#F4F0E8]/35" />
+
+  <div className="relative z-10 max-w-7xl mx-auto px-6 h-full grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+    {/* Parte sinistra */}
+    <div className="flex flex-col justify-center">
+      <div className="overflow-hidden">
+        <p className="hero-block hero-delay-1 font-mono text-[18px] md:text-[22px] uppercase tracking-[0.3em] mb-4 text-[#B55440]">
+          May 12–14, 2026
+        </p>
+      </div>
+
+      <div className="overflow-hidden">
+        <h1 className="hero-block hero-delay-2 text-6xl md:text-8xl font-extrabold tracking-tighter leading-[0.9]">
+          VISIMAI 2026
+        </h1>
+      </div>
+
+      <div className="overflow-hidden">
+        <p className="hero-block hero-delay-3 max-w-3xl text-xl md:text-2xl font-bold mt-6">
+          Visinoni Symposium on Media, Absurdity and Italian Television
+        </p>
+      </div>
+
+      <div className="overflow-hidden mt-8">
+        <p className="hero-block hero-delay-4 inline-block bg-[#C7654E] text-white px-4 py-3 font-mono text-[20px] md:text-[26px] uppercase tracking-[0.35em] leading-none">
+          VisiNow and 4ever
+        </p>
+      </div>
+    </div>
+
+    {/* Parte destra */}
+    <div className="hidden lg:flex justify-end items-center">
+      <div
+        className="
+          w-full max-w-[520px]
+          h-[520px]
+          rounded-3xl
+          overflow-hidden
+          border border-white/40
+          shadow-2xl
+          bg-white/30
+          backdrop-blur-sm
+        "
+      >
         <img
-          src={heroImage}
-          alt="Politecnico di Milano"
-          className="absolute inset-0 w-full h-full object-cover saturate-[0.65] contrast-[0.9] opacity-60"
+          src={heroRightImage}
+          alt="VISIMAI 2026 featured image"
+          className="w-full h-full object-cover"
         />
-
-        <div className="absolute inset-0 bg-[#F4F0E8]/35" />
-
-        <div className="relative z-10 max-w-7xl mx-auto px-6 h-full flex flex-col justify-end pb-24">
-          <div className="overflow-hidden">
-            <p className="hero-block hero-delay-1 font-mono text-[18px] md:text-[22px] uppercase tracking-[0.3em] mb-4 text-[#B55440]">
-              May 12–14, 2026
-            </p>
-          </div>
-
-          <div className="overflow-hidden">
-            <h1 className="hero-block hero-delay-2 text-6xl md:text-8xl font-extrabold tracking-tighter leading-[0.9]">
-              VISIMAI 2026
-            </h1>
-          </div>
-
-          <div className="overflow-hidden">
-            <p className="hero-block hero-delay-3 max-w-3xl text-xl md:text-2xl font-bold mt-6">
-              Visinoni Symposium on Media, Absurdity and Italian Television
-            </p>
-          </div>
-
-          <div className="overflow-hidden mt-8">
-            <p className="hero-block hero-delay-4 inline-block bg-[#C7654E] text-white px-4 py-3 font-mono text-[20px] md:text-[26px] uppercase tracking-[0.35em] leading-none">
-              VisiNow and 4ever
-            </p>
-          </div>
-        </div>
-      </header>
+      </div>
+    </div>
+  </div>
+</header>
 
       {/* About */}
       <section
