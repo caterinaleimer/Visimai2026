@@ -31,9 +31,7 @@ const speakers = [
   },
   {
     image: speaker2,
-    name: "Davide Carrara",
-    coauthor: "Alessandra Cancrini",
-    coauthorImage: coauthor2,
+    name: "Davide Carrara & Alessandra Cancrini",
     affiliation: "Politecnico di Milano",
     role: "Invited Contribution",
     talkTitle:
