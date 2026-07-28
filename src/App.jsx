@@ -4,7 +4,7 @@ import heroImage from "./assets/hero.jpg";
 import heroRightImage from "./assets/hero-right.png";
 import conferenceLogo from "./assets/visimai-logo.jpeg";
 import visinoniPhoto from "./assets/michele-visinoni.jpeg";
-import sostaImage from "./assets/sosta-break.jpg";
+import sostaImage from "./assets/sosta-break.jpeg";
 
 import speaker1 from "./assets/speaker1.jpeg";
 import speaker2 from "./assets/speaker2.png";
