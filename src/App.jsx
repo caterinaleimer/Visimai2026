@@ -5,6 +5,7 @@ import heroRightImage from "./assets/hero-right.png";
 import conferenceLogo from "./assets/visimai-logo.jpeg";
 import visinoniPhoto from "./assets/michele-visinoni.jpeg";
 import sostaImage from "./assets/sosta-break.jpeg";
+import lucaSostaPhoto from "./assets/sosta-break.jpeg";
 
 import speaker1 from "./assets/speaker1.jpeg";
 import speaker2 from "./assets/speaker2.png";
@@ -523,6 +524,45 @@ function App() {
               </p>
             </div>
           </div>
+
+          {/* Luca Sosta */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 bg-[#FAF8F3] border border-[#C8D2CC] rounded-2xl overflow-hidden mb-10">
+            {/* Testo a sinistra */}
+            <div className="p-8 lg:p-12 flex flex-col justify-center">
+              <span className="font-mono text-sm md:text-base text-[#C7654E] uppercase tracking-[0.18em]">
+                Guest of Honour
+              </span>
+          
+              <span className="font-mono text-sm md:text-base text-muted-foreground uppercase tracking-[0.18em] mt-3">
+                Politecnico di Milano
+              </span>
+          
+              <h4 className="text-3xl md:text-4xl font-bold mt-6">
+                Luca Sosta
+              </h4>
+          
+              <p className="text-lg text-muted-foreground leading-relaxed mt-5 max-w-xl">
+                Guest of honour of the second event of the day. The SOSTA Break is
+                organised to celebrate his time at the Department, with a farewell
+                coffee, a special poster session and social activities prepared for the
+                occasion.
+              </p>
+          
+              <p className="font-mono text-xs uppercase tracking-widest text-[#557C78] mt-8">
+                Cool, cool, cool. No doubt — but with posters.
+              </p>
+            </div>
+          
+            {/* Foto a destra */}
+            <div className="p-8 lg:p-12">
+              <img
+                src={lucaSostaPhoto}
+                alt="Luca Sosta"
+                className="w-full aspect-square object-cover rounded-xl"
+              />
+            </div>
+          </div>
+          
 
           {/* Keynote */}
           <button
