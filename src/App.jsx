@@ -414,10 +414,6 @@ function App() {
                 <p className="text-lg font-bold mt-3">
                   Sala Mella, Edificio Nave
                 </p>
-
-                <p className="text-sm md:text-base text-muted-foreground mt-1">
-                  Fifth floor, Politecnico di Milano
-                </p>
               </div>
 
               <div className="bg-[#FAF8F3] border border-[#D8CFC2] rounded-2xl p-6">
