@@ -394,15 +394,20 @@ function App() {
             </h3>
 
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mt-6">
-              Following VISIMAI 2026, the second event of the day will take
-              place: a farewell coffee organised in honour of Luca Sosta, with
-              a special poster session.
+              Following VISIMAI 2026, the second event of the day will begin: a farewell
+              coffee organised in honour of Luca Sosta, accompanied by a special poster
+              session. In the spirit of every respectable research group facing uncertain
+              funding, questionable decisions and highly unstable dynamics, the objective
+              is simple: survive, collaborate and possibly avoid founding a criminal
+              enterprise.
             </p>
-
+            
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mt-5">
-              Food and drinks will be available, including some beverages not
-              strictly suitable for a traditional “coffee” break, together
-              with social activities organised for the occasion.
+              Food and drinks will be available, including beverages not traditionally
+              associated with a coffee break. The programme will also feature social
+              activities, emotionally significant conversations and a level of collective
+              organisation that Captain Holt would describe as acceptable — provided that
+              everyone respects the schedule.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-9">
