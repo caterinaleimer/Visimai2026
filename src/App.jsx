@@ -273,7 +273,7 @@ function App() {
     <div className="flex flex-col justify-center">
       <div className="overflow-hidden">
         <p className="hero-block hero-delay-1 font-mono text-[18px] md:text-[22px] uppercase tracking-[0.3em] mb-4 text-[#B55440]">
-          May 12–14, 2026
+          July 31, 2026
         </p>
       </div>
 
